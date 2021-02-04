@@ -18,6 +18,11 @@
         rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
 
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" /> -->
+
+<link rel="stylesheet" href="./css/bootstrap-select.css">
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -442,95 +447,127 @@
                             <div class="card shadow h-100 py-2">
                                 <div class="card-body">
                             <form  class="needs-validation" novalidate>
-                                <div class="row mt-2">
+                                <div class="row mt-2 ">
                                     <div class="form-group col">
                                         <!-- <label for="inputEmail4">First Name</label>
-                                        <input type="text" class="form-control" placeholder="First name">
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div> -->
-                                        <label for="validationServer01">First Name</label>
+                                                                        <input type="text" class="form-control" placeholder="First name">
+                                                                        <div class="valid-feedback">
+                                                                            Looks good!
+                                                                        </div> -->
+                                        <label for="">Company Name</label>
+                                        <input type="text" class="form-control" placeholder="Company Name" >
+                                        <div class="invalid-feedback">
+                                            Please Enter Company Name.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="">Primary Service Provider</label>
+                                        <input type="text" class="form-control" placeholder="Primary Service Provider" >
+                                        <div class="invalid-feedback">
+                                            Please Enter Primary Service Provider.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row mt-2">
+                                    <div class="form-group col">
+                                        <label for="">First Name</label>
                                         <input type="text" class="form-control" placeholder="First name"  required>
                                         <div class="invalid-feedback">
                                             Please Enter First Name.
                                         </div>
                                     </div>
                                     <div class="form-group col">
-                                        <label for="inputEmail4">Middle Name</label>
-                                        <input type="text" class="form-control" placeholder="Middle Name" required>
-                                        <div class="invalid-feedback">
-                                            Please Enter Last Name.
-                                        </div>
-                                    </div>
-                                    <div class="form-group col">
-                                        <label for="inputEmail4">Last Name</label>
+                                        <label for="">Last Name</label>
                                         <input type="text" class="form-control" placeholder="Last Name" required>
                                         <div class="invalid-feedback">
                                             Please Enter Last Name.
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                    <div class="form-group col">
+                                        <label for="">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                            required>
                                         <div class="invalid-feedback">
                                             Please Enter Valid Email Id.
                                         </div>
                                     </div>
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Phone Number</label>
-                                        <input type="text" class="form-control" placeholder="Phone Number" 
-                                        pattern="^\d{10}$" required>
-                                        <div class="invalid-feedback">
-                                            Please Enter Phone Number.
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Address</label>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="form-group col-8">
+                                        <label for="">Address</label>
                                         <input type="text" class="form-control" placeholder="Address" required>
                                         <div class="invalid-feedback">
                                             Please Enter Address.
                                         </div>
                                     </div>
+                                    <div class="form-group col">
+                                        <label for="">Pin Code</label>
+                                        <input type="text" class="form-control" placeholder="Pin Code" 
+                                        pattern="^\d{6}$" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter 6 digit Pin code.
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row mt-2">
                                     <div class="form-group col-4">
-                                        <label for="sel1">Device Type</label>
-                                        <select class="form-control" id="sel1" required>
-                                            <option>Mobile</option>
-                                            <option>PC</option>
-                                            <option>Laptop</option>
-                                        </select>
+                                        <label for="">Mobile Number</label>
+                                        <input type="text" class="form-control" placeholder="Mobile Number" pattern="^\d{10}$" required>
                                         <div class="invalid-feedback">
-                                            Please Select Device Type.
+                                            Please Enter Mobile Number.
                                         </div>
                                     </div>
                                     <div class="form-group col-4">
-                                        <label for="inputEmail4">Brand Name</label>
+                                        <label for="">Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="Phone Number" pattern="^\d{10}$" >
+                                        <div class="invalid-feedback">
+                                            Please Enter Phone Number.
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row mt-2">
+                                    <div class="form-group col">
+                                        <label for="">Brand Name</label>
                                         <input type="text" class="form-control" placeholder="Brand Name" required>
                                         <div class="invalid-feedback">
                                             Please Enter Brand Name.
                                         </div>
                                     </div>
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Model Number</label>
+                                    <div class="form-group col">
+                                        <label for="">Model Number</label>
                                         <input type="text" class="form-control" placeholder="Model Number" required>
                                         <div class="invalid-feedback">
                                             Please Enter Model Number.
                                         </div>
                                     </div>
+                                    <div class="form-group col">
+                                        <label for="">Serial Number</label>
+                                        <input type="text" class="form-control" placeholder="Serial Number" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter Serial Number.
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row mt-2">
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">IMEI</label>
+                                    <div class="form-group col">
+                                        <label for="">IMEI</label>
                                         <input type="text" class="form-control" placeholder="IMEI Number" required>
                                         <div class="invalid-feedback">
                                             Please Enter IMEI Number.
                                         </div>
                                     </div>
-                                    <div class="form-group col-4">
-                                        <label for="sel1">Warranty</label>
+                                    <div class="form-group col">
+                                        <label for="">Purchase Date</label>
+                                        <input type="text" class="form-control datepicker" placeholder="dd/MM/yyyy"
+                                            pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}" required>
+                                        <div class="invalid-feedback">
+                                            Please Enter Purchase date Valid Date.
+                                        </div>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="">Warranty</label>
                                         <select class="form-control" id="sel1" required>
                                             <option>No</option>
                                             <option>Yes</option>
@@ -539,54 +576,77 @@
                                             Please select Warranty.
                                         </div>
                                     </div>
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Date</label>
-                                        <input type="text" class="form-control datepicker" placeholder="dd/MM/yyyy"
-                                        pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}" required>
-                                        <div class="invalid-feedback">
-                                            Please Enter Valid Date.
-                                        </div>
-                                    </div>
                                 </div>
+                                <hr>
                                 <div class="row mt-2">
-                                    <div class="form-group col-4">
-                                        <label for="sel1">Product Condition</label>
-                                        <select class="form-control" id="sel1" required>
-                                            <option>Off</option>
-                                            <option>On</option>
+                                    <div class="form-group col-8">
+                                        <label for="">Device Problem</label>
+                                        <!-- <input type="text" class="form-control" placeholder="Device Problem" required> -->
+                                        <select multiple data-style="bg-white border" class="selectpicker form-control" required>
+                                            <option>Display Not Working</option>
+                                            <option>Speker Not Working</option>
+                                            <option>Auto Matic Phonr off</option>
+                                            <option>Camera Not Working</option>
+                                            <option>Charging Problem</option>
                                         </select>
                                         <div class="invalid-feedback">
-                                            Please select Product Condition.
+                                            Please Enter Device Problem.
                                         </div>
                                     </div>
-                                    <div class="form-group col-4">
-                                    <label for="inputEmail4">Product Problem</label>
-                                    <input type="text" class="form-control" placeholder="Product Problem" required>
-                                    <div class="invalid-feedback">
-                                        Please Enter Product Problem.
-                                    </div>
-                                    </div>
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Requird Cost</label>
-                                        <input type="text" class="form-control" placeholder="Requird Cost Rs." required>
+                                    <div class="form-group col">
+                                        <label for="">Other Problems</label>
+                                        <input type="text" class="form-control" placeholder="Other problems if any">
                                         <div class="invalid-feedback">
-                                            Please Enter Cost.
+                                            Please Enter Other Problems.
                                         </div>
-                                    </div>
+                                    </div>                                
                                 </div>
-                                <div class="row mt-2">
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Tocken Number</label>
-                                        <input type="text" class="form-control" placeholder="Tocken Number" required>
+                                    <div class="row mt-2">
+                                    <div class="form-group col-8">
+                                        <label for="">Confirgation</label>
+                                        <select multiple data-style="bg-white border" class="selectpicker form-control" required>
+                                            <option>1 TB</option>
+                                            <option>6 GB</option>
+                                            <option>4 GB</option>
+                                            <option>2 Gb</option>
+                                        </select>
                                         <div class="invalid-feedback">
-                                            Please Enter Tocken Number.
+                                            Please Enter Confirgation.
                                         </div>
-                                    </div>                                    
-                                    <div class="form-group col-4">
-                                        <label for="inputEmail4">Delivery Date</label>
-                                        <input type="text" class="form-control" placeholder="dd/MM/yyyy" required>
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="">Other Confirgation</label>
+                                        <input type="text" class="form-control" placeholder="Other Confirgation if any">
                                         <div class="invalid-feedback">
-                                            Please Enter Delivery Date.
+                                            Please Enter Other Confirgation.
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="form-group col-8">
+                                            <label for="">Accessories</label>
+                                            <select multiple data-style="bg-white border" class="selectpicker form-control">
+                                                <option>Charges</option>
+                                                <option>Earphones</option>
+                                                <option>Data Cable</option>
+                                                <option>Case</option>
+                                            </select>
+                                            </div><div class="form-group col">
+                                                <label for="">Other Accessories</label>
+                                                <input type="text" class="form-control" placeholder="Other Accessories if any">
+                                                <div class="invalid-feedback">
+                                                    Please Enter Other Accessories.
+                                                </div>
+                                            </div>
+                                    </div>
+                                
+                                <div class="row mt-2">
+                                    <div class="form-group col-8">
+                                        <label for="">Miscellaneous Comments</label>
+                                        <!-- <input type="text" class="form-control" placeholder="Miscellaneous Comments" required> -->
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Miscellaneous Comments" required rows="3"></textarea>
+                                        <div class="invalid-feedback">
+                                            Please Enter Miscellaneous Comments.
                                         </div>
                                     </div>
                                 </div>
@@ -647,7 +707,16 @@
     </div>
 
     <script>
+    
+    
+
+    
+
         (function () {
+
+           
+            $('.selectpicker').selectpicker();
+
             'use strict'
 
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -673,7 +742,9 @@
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <!-- for multiSelect dropdown  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <!-- for multiSelect dropdown  -->
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -686,7 +757,7 @@
 
     var templateScript = Handlebars.compile($('#myTemplate').html());
     var MyData = {
-        "name": "Vishal Phirkoj",
+        "name": "Arpa Enterprise",
         "JobTitle": "Full stack Software Developer ",
         "Age": 21 + 1,
         "languages": ["Bootstrap", "React", "Support"]
