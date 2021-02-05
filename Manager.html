@@ -497,6 +497,70 @@
                             </div>
                         </div>
 
+                        <!-- Status Table -->
+
+                        <div class="col-xl-12 mb-4" style="margin: auto;">
+                            
+                            <div class="card shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Call ID</th>
+                                                    <th>Date</th>
+                                                    <th>Call Status</th>
+                                                    <th>Engineer</th>
+                                                    <th>Edit</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Ram Patil</td>
+                                                    <td>00001</td>
+                                                    <td>05/06/2020</td>
+                                                    <td class="text-danger">Pending</td>
+                                                    <td>Rushi</td>
+                                                    <td>
+                                                        <a class="btn btn-primary " href="ManagerEdit.html">
+                                                            edit
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rahul Patil</td>
+                                                    <td>00002</td>
+                                                    <td>06/06/2020</td>
+                                                    <td class="text-warning">Waiting</td>
+                                                    <td>Rushi</td>
+                                                    <td>
+                                                        <a class="btn btn-primary " href="ManagerEdit.html">
+                                                            edit
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <tr>
+                                                <td>Rohit Patil</td>
+                                                <td>00003</td>
+                                                <td>07/06/2020</td>
+                                                <td class="text-success">Completed</td>
+                                                <td>Rushi</td>
+                                                <td>
+                                                    <a class="btn btn-primary " href="ManagerEdit.html">
+                                                        edit
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Status Table End -->
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -583,7 +647,7 @@
 
     var templateScript = Handlebars.compile($('#myTemplate').html());
     var MyData = {
-        "name": "Vishal Phirkoj",
+        "name": "Arpa Enterprises",
         "JobTitle": "Full stack Software Developer ",
         "Age": 21 + 1,
         "languages": ["Bootstrap", "React", "Support"]
